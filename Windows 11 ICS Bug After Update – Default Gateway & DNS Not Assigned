@@ -1,0 +1,55 @@
+ Context:
+Setting up a home lab with a Raspberry Pi 5, old laptops, and a switch.
+
+Using Internet Connection Sharing (ICS) on a Windows 11 PC to bridge Wi-Fi to Ethernet.
+
+After a routine Windows Update, ICS partially broke.
+
+ Observed Symptoms:
+ICS service appears to be running.
+
+Ethernet cable lights up; link is active.
+
+Connected devices receive an IP address in 192.168.137.x range.
+
+But:
+
+No default gateway assigned
+
+No DNS server assigned
+
+Result: No internet connectivity without manual intervention.
+
+🔍 Diagnosis Steps:
+Verified ICS was enabled and bound to the correct adapter.
+
+Confirmed 192.168.137.1 was assigned to the Windows Ethernet interface.
+
+Ran ip a, ip route on Linux client (Kali).
+
+Ping to 8.8.8.8 failed due to missing route.
+
+
+🪲 Conclusion:
+ICS’s DHCP server component is broken post-update.
+
+It hands out IPs but not gateway or DNS info, which breaks NAT routing.
+
+Restarting the ICS service and rebooting devices did not fix the issue.
+
+Most likely introduced by a Windows 11 cumulative or feature update.
+
+ Workarounds:
+Manually configure routing and DNS on each device.
+
+Use a dedicated DHCP+NAT box (e.g. Raspberry Pi running dnsmasq or a lightweight firewall distro).
+
+Avoid ICS in production-like lab setups — it's fragile and undocumented.
+
+ Lessons Learned:
+Windows ICS is unreliable for persistent lab use.
+
+After Windows updates, always re-verify network services and DHCP behavior.
+
+Keep fallback static IP and route configs on hand for connected devices.
+Overall, pretty good IT experience using AI tools and troubleshooting. Another note is Verify any bugs on the Microsoft Forms regarding ICS before updating.
