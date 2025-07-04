@@ -1,0 +1,94 @@
+# 🎯 Watching the Watchers: What My GitHub Honeypot Catches
+
+It’s 12:00 PM. I push a new GitHub repo labeled clearly as a honeypot. 
+The code doesn’t work. It’s meant not to. 
+It contains nothing useful—just synthetic scripts, broken syntax, and a README that says “This is a honeypot.” Bold, clear, and simple.
+
+By 4:00 PM, it’s been cloned 12 times. **Twelve** unique machines decide to download broken code.
+They don't star it, they don't fork it, they don’t even leave a footprint beyond the clone. That’s the goal. 
+They come, they grab, they leave. Quiet. Mechanical.
+
+This is reconnaissance.
+
+## 👀 What They're After
+
+The repo uses keywords like:
+
+- `infosec`
+- `cybersecurity`
+- `pentesting`
+- `USB emulation`
+- `threat-intelligence`
+
+It’s bait. But it’s legal. Educational. Passive. Harmless.
+
+The funny part? The README literally says:
+
+> “This repository is a honeypot. It is a non-functional decoy used to study scanning behavior.”
+
+No one reads it. Or more likely, **no one reading it is human**.
+
+## 📊 What I See in GitHub Insights
+
+- **35+ views** in less than 8 hours
+- **17 clones**, **15 unique**
+- **0 stars**, **0 forks**
+- The top cloned file? A broken blog post about a Windows ICS bug.
+
+Let that sink in. They’re even cloning my blog. Not a tool. Not an exploit. A **blog**.
+
+## 🤨 Why?
+
+Because this is how threat actors work.
+
+They scrape GitHub for keywords. They clone everything with a hint of networking, cybersecurity, or privilege escalation. Especially if the user is young, inexperienced, or in a “learning” phase. That’s where the soft targets live.
+
+And that’s why I do this.
+
+## 🧠 What I Learn
+
+This isn’t about tracking individuals. This isn’t about naming countries (although let’s be real—some guesses are easier than others). This is about visibility. It’s about proving that **even simple, broken code gets attention**.
+
+Some of that attention? Automated.
+Some? Possibly foreign.
+Some? Just plain curious.
+
+Either way, **it’s measurable.**
+
+## 🧪 The Setup
+
+- Repo name: `usb-emulation-lab`
+- Python scripts with harmless names like `hello_scan.py`
+- Syntax errors intentionally included (e.g., using `''` instead of `""`)
+- No actual functionality. Just enough text and structure to seem plausible.
+
+I use GitHub's own traffic insights to monitor:
+
+- Views
+- Clones
+- Referring sites
+- Unique visitors
+
+The second someone forks it? I block.  
+The second someone suspicious stars it? I block.  
+The goal isn’t to catch anyone—it’s to **see what gets caught**.
+
+## 🔒 Why It Matters
+
+If you’re building in the open, people are watching.  
+Not always the people you think.
+
+This honeypot proves that even **clearly fake repos** get cloned—fast.  
+And if I were a real target? That wouldn’t change. It would escalate.
+
+## 🏁 Conclusion
+
+So yeah—it's silly. It’s funny. But it’s also real.
+
+If you’re in cybersecurity, especially as a student or beginner, take this as your reminder:
+
+> **People are watching you.**
+
+Sometimes that’s good. Sometimes it’s educational.  
+But sometimes? It’s just… quiet cloning in the dark.
+
