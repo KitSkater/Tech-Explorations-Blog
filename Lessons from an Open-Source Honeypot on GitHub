@@ -1,4 +1,4 @@
-# 🎯 Watching the Watchers: What My GitHub Honeypot Catches
+#🎯 Watching the Watchers: What My GitHub Honeypot Catches
 
 It’s 12:00 PM. I push a new GitHub repo labeled clearly as a honeypot. 
 The code doesn’t work. It’s meant not to. 
@@ -45,7 +45,7 @@ They scrape GitHub for keywords. They clone everything with a hint of networking
 
 And that’s why I do this.
 
-## 🧠 What I Learn
+##🧠 What I Learn
 
 This isn’t about tracking individuals. This isn’t about naming countries (although let’s be real—some guesses are easier than others). This is about visibility. It’s about proving that **even simple, broken code gets attention**.
 
@@ -87,7 +87,7 @@ So yeah—it's silly. It’s funny. But it’s also real.
 
 If you’re in cybersecurity, especially as a student or beginner, take this as your reminder:
 
-> **People are watching you.**
+**People are watching you.**
 
 Sometimes that’s good. Sometimes it’s educational.  
 But sometimes? It’s just… quiet cloning in the dark.
